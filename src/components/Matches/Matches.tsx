@@ -4,9 +4,7 @@ import { Markets } from '../Markets/Markets'
 import styles from './Matches.module.scss'
 
 export const Matches = () => {
-  const selectedTournament = useAppSelector(
-    (state) => state.allInformationAboutSports.tournamentEvents
-  )
+  const selectedTournament = useAppSelector((state) => state.tournaments)
 
   return (
     <>

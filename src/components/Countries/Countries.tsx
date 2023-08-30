@@ -1,15 +1,13 @@
-import { useAppDispatch, useAppSelector } from "../../hooks/useRedux"
-import { Icity, Isport, Itournament } from "../../interfaces"
-import { toggleSelectedCountryIndex } from "../../store/slices/selectedCountrySlice"
-import { Tournaments } from "../Tournaments/Tournaments"
+import { useAppDispatch, useAppSelector } from '../../hooks/useRedux'
+import { Icity, Isport, Itournament } from '../../interfaces'
+import { toggleSelectedCountryIndex } from '../../store/slices/selectedCountrySlice'
+import { Tournaments } from '../Tournaments/Tournaments'
 import styles from './Countries.module.scss'
 
 export const Countries = () => {
   const dispatch = useAppDispatch()
   const selectedSportId = useAppSelector((state) => state.selectedSport.sportId)
-  const sports = useAppSelector(
-    (state) => state.allInformationAboutSports.sports
-  )
+  const sports = useAppSelector((state) => state.sports)
   const selectedCountryIndexes = useAppSelector(
     (state) => state.selectedCountry.selectedCountryIndexes
   )

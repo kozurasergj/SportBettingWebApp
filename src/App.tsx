@@ -11,22 +11,10 @@ import TopMatches from './pages/topMatches'
 
 const App = () => {
   const dispatch = useAppDispatch()
-  // const preMatchSports = useAppSelector((state) => state.sports.preMatchSports)
-  // const tournamentEvents = useAppSelector(
-  //   (state) => state.sports.tournamentEvents
-  // )
 
   useEffect(() => {
     dispatch(fetchSports())
   }, [dispatch])
-
-  // const handleTournamentEvents = (tournamentId) => {
-  //   dispatch(fetchTournamentEvents(tournamentId))
-  // }
-
-  // const handleAddToBetslip = (outcomeId, ticket) => {
-  //   dispatch(addToBetslipAsync(outcomeId, ticket))
-  // }
 
   return (
     <>

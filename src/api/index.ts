@@ -2,7 +2,9 @@ import { Dispatch } from 'redux'
 import { IfetchHeaders } from '../interfaces'
 
 import { addToBetslip } from '../store/slices/betslipsSlice'
-import { setSports, setTournamentEvents } from '../store/slices/sportsSlice'
+import { setSports } from '../store/slices/sportsSlice'
+import { setTournaments } from '../store/slices/tournamentsSlice'
+
 
 const API_URL = 'https://sportsbook-api.lasworks.com/api'
 
@@ -44,7 +46,7 @@ export const fetchTournamentEvents =
     })
 
     const data = await response.json()
-    dispatch(setTournamentEvents(data))
+    dispatch(setTournaments(data))
   }
 
 export const addToBetslipAsync =

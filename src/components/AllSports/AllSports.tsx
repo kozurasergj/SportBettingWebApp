@@ -2,22 +2,20 @@ import { useAppDispatch, useAppSelector } from '../../hooks/useRedux'
 import { Icity, Isport } from '../../interfaces'
 import { resetSelectedCountryIndexes } from '../../store/slices/selectedCountrySlice'
 import { setSelectedSport } from '../../store/slices/selectedSportSlice'
-import { resetTournamentEvents } from '../../store/slices/sportsSlice'
+import { resetTournaments } from '../../store/slices/tournamentsSlice'
 import styles from './allSports.module.scss'
 
 export const AllSports = () => {
   const dispatch = useAppDispatch()
 
-  const sports = useAppSelector(
-    (state) => state.allInformationAboutSports.sports
-  )
+  const sports = useAppSelector((state) => state.sports)
 
   const selectedSportId = useAppSelector((state) => state.selectedSport.sportId)
 
   const handleButtonClick = (sportId: number) => {
     dispatch(setSelectedSport(sportId))
     dispatch(resetSelectedCountryIndexes())
-    dispatch(resetTournamentEvents())
+    dispatch(resetTournaments())
   }
 
   return (
@@ -47,3 +45,4 @@ export const AllSports = () => {
     </section>
   )
 }
+

@@ -1,14 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit'
+import betslipsSlice from './slices/betslipsSlice'
 import languageDropdownReducer from './slices/languageDropdownSlice'
 import selectedCountrySlice from './slices/selectedCountrySlice'
-import sportsSlice from './slices/sportsSlice'
 import selectedSportSlice from './slices/selectedSportSlice'
-import betslipsSlice from './slices/betslipsSlice'
+import sportsSlice from './slices/sportsSlice'
+import tournamentsSlice from './slices/tournamentsSlice'
 
 export const store = configureStore({
   reducer: {
     languageDropdown: languageDropdownReducer,
-    allInformationAboutSports: sportsSlice,
+    sports: sportsSlice,
+    tournaments: tournamentsSlice,
     selectedSport: selectedSportSlice,
     selectedCountry: selectedCountrySlice,
     betslips: betslipsSlice,
