@@ -1,4 +1,64 @@
 .countries {
-    margin-top: 200px;
+    width: 30%;
+    background-color: #151515;
+    .countries__date {
+        background: linear-gradient(180deg, #f1f1f1 0%, #9e9e9e 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        .countries__button {
+            padding: 10px 5px;
+            color: #0e0e0e;
+            font-size: 12px;
+            font-weight: 500;
+            width: 100%;
+        }
+        .countries__button-active {
+            background: linear-gradient(180deg, rgba(141, 141, 141, 0.3) 0%, rgba(168, 168, 168, 0.3) 100%);
+            box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15) inset;
+            border-bottom: 1px solid #22b14c;
+        }
+    }
+    .countries__heading {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 10px 0 10px;
+        .countries__text {
+            color: #f9f9f9;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    .countries__list {
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        .countries__country {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            align-items: center;
+            margin: 10px 0;
+            .countries__name {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+            .countries__arrow {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        }
+        .countries__tournaments {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+        }
+    }
 }
-

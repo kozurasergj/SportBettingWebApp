@@ -1,0 +1,27 @@
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1px;
+    border: 1px solid #282828;
+    background: linear-gradient(180deg, #232323 0%, #151515 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .days__button {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 13px;
+        letter-spacing: 0.227px;
+        padding: 20px 60px;
+        background: linear-gradient(180deg, #3e3e3e 0%, #131313 100%);
+        transform: skewX(-10deg);
+    }
+    .days__button-active {
+        color: #fff;
+        background: linear-gradient(181deg, rgba(92, 92, 92, 0.57) 0%, rgba(46, 46, 46, 0.57) 100%);
+        box-shadow:
+            0px 4px 33px 0px rgba(0, 0, 0, 0.09) inset,
+            0px 2px 0px 0px #55ad57 inset;
+    }
+}

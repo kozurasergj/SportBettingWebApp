@@ -1,13 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// interface initialState {
-//   tournaments: any
-// }
-
-// const initialState: initialState = {
-//   tournaments: [],
-// }
-
 const tournamentsSlice = createSlice({
   name: 'sports',
   initialState: [],

@@ -1,15 +1,9 @@
-import { AllSports } from '../components/AllSports/AllSports'
-import { Countries } from '../components/Countries/Countries'
-import { Matches } from '../components/Matches/Matches'
-import { Betslips } from '../components/Betslips/Betslips'
+import { Dashboard } from '../components/Dashboard/Dashboard'
 
 const HomePage = () => {
   return (
     <>
-      <Countries />
-      <Matches />
-      <Betslips />
-      <AllSports />
+      <Dashboard />
     </>
   )
 }

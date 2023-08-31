@@ -1,0 +1,12 @@
+.dashboard {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    .dashboard__block {
+        width: 80%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
